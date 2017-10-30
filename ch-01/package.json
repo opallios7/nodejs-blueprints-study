@@ -1,0 +1,41 @@
+{
+  "name": "ch-01",
+  "description": "Build a Twitter Like app using the MVC design pattern",
+  "license": "MIT",
+  "author": {
+    "name": "Jason Lee (original : Fernando Monteiro)",
+    "url": "https://github.com/opallios7/nodejs-blueprints-study (original : https://github.com/newaeonweb/node-6-blueprints)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opallios7/nodejs-blueprints-study.git"
+  },
+  "keywords": [
+    "MVC",
+    "Express Application",
+    "Expressjs"
+  ],
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "~1.18.2",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^2.0.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.15.5",
+    "express-session": "^1.15.6",
+    "gravatar": "^1.6.0",
+    "mongoose": "^4.12.4",
+    "morgan": "~1.9.0",
+    "node-sass-middleware": "0.9.8",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "serve-favicon": "~2.4.5"
+  }
+}
