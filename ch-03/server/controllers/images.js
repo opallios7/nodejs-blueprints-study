@@ -3,12 +3,12 @@ var fs = require('fs');
 var mime = require('mime');
 // 이메일에서 Gravatar 아이콘 얻기
 var gravatar = require('gravatar');
-
+// 이미지 모델 얻기
 var Images = require('../models/images');
 // 이미지 파일 형식 설정
 var IMAGE_TYPES = ['image/jpeg','image/jpg', 'image/png'];
 
-// 이미지 갤러리 보여주기
+// 이미지 목록
 exports.show = function (req, res) {
 
     Images.find().sort('-created').populate('user', 'local.email').exec(function(error, images) {
@@ -17,7 +17,7 @@ exports.show = function (req, res) {
                 message: error
             });
         }
-        // 이미지 랜더링
+        // 결과 랜더링
         res.render('images-gallery', {
             title: 'Images Gallery',
             images: images,

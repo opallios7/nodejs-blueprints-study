@@ -1,4 +1,4 @@
-// load the things we need
+// 필요한 것 로딩
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
